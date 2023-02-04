@@ -1,4 +1,5 @@
-
+import flatpickr from "flatpickr";
+import "flatpickr/dist/flatpickr.min.css";
 
 
 const input = document.getElementById("datetime-picker");
@@ -10,7 +11,3 @@ const Btn = document.querySelector('[data-start]');
 const countDownDate = new Date();
 
 const now = Date.now();
-console.log(now);
-
-const featureDate = input;
-console.log(featureDate);
