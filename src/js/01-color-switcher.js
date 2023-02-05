@@ -10,13 +10,15 @@ dataStopRef.addEventListener('click', onStop);
 function onStart() {
   timerId = setInterval(getBgColor, 1000);
 
-  dataStartRef.toggleAttribute('disabled');
+  dataStartRef.disabled = true;
+  dataStopRef.disabled = false;
 }
 
 function onStop() {
   clearInterval(timerId);
 
-  dataStartRef.removeAttribute('disabled');
+  dataStartRef.disabled = false;
+  dataStopRef.disabled = true;
 }
 
 function getBgColor() {
